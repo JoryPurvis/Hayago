@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE0F4ADA29985213007BE3CB /* Space.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0F4AD929985213007BE3CB /* Space.swift */; };
 		FE2BB2E22997508B00D8758A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE2BB2E12997508B00D8758A /* Assets.xcassets */; };
 		FE2BB2E82997508C00D8758A /* Hayago MessagesExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = FE2BB2E72997508C00D8758A /* Hayago MessagesExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		FE2BB2ED2997508C00D8758A /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE2BB2EC2997508C00D8758A /* Messages.framework */; };
 		FE2BB2F02997508C00D8758A /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2BB2EF2997508C00D8758A /* MessagesViewController.swift */; };
 		FE2BB2F32997508C00D8758A /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE2BB2F12997508C00D8758A /* MainInterface.storyboard */; };
 		FE2BB2F52997508C00D8758A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE2BB2F42997508C00D8758A /* Assets.xcassets */; };
+		FE9B1AFD2999613400DFF572 /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9B1AFC2999613400DFF572 /* GameState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		FE0F4AD929985213007BE3CB /* Space.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Space.swift; sourceTree = "<group>"; };
 		FE2BB2DE2997508A00D8758A /* Hayago.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hayago.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE2BB2E12997508B00D8758A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE2BB2E72997508C00D8758A /* Hayago MessagesExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Hayago MessagesExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,6 +51,7 @@
 		FE2BB2F22997508C00D8758A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		FE2BB2F42997508C00D8758A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE2BB2F62997508C00D8758A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE9B1AFC2999613400DFF572 /* GameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,9 +105,11 @@
 			isa = PBXGroup;
 			children = (
 				FE2BB2EF2997508C00D8758A /* MessagesViewController.swift */,
+				FE0F4AD929985213007BE3CB /* Space.swift */,
 				FE2BB2F12997508C00D8758A /* MainInterface.storyboard */,
 				FE2BB2F42997508C00D8758A /* Assets.xcassets */,
 				FE2BB2F62997508C00D8758A /* Info.plist */,
+				FE9B1AFC2999613400DFF572 /* GameState.swift */,
 			);
 			path = "Hayago MessagesExtension";
 			sourceTree = "<group>";
@@ -207,6 +213,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE9B1AFD2999613400DFF572 /* GameState.swift in Sources */,
+				FE0F4ADA29985213007BE3CB /* Space.swift in Sources */,
 				FE2BB2F02997508C00D8758A /* MessagesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -411,9 +419,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = jory.Hayago;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -431,9 +442,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = jory.Hayago;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
